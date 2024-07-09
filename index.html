@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Ali Sami</div>
+      <ul class="nav-ul">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <ul class="sidebar">
+        <!-- <li><a href="#"><i class="fa-solid fa-xmark"></i></a></li> -->
+        <li onclick="closeMenu()">
+          <a href="#"
+            ><i
+              class="fa-solid fa-xmark"
+              style="font-size: 20px; margin-right: 20px; color: black"
+            ></i
+          ></a>
+        </li>
+        <li onclick="closeMenu()"><a href="#hero">Home</a></li>
+        <li onclick="closeMenu()"><a href="#skill">skills</a></li>
+        <li onclick="closeMenu()"><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="bar" onclick="openMenu()">
+        <i
+          class="fa-solid fa-bars"
+          style="font-size: 20px; margin-right: 20px; color: white"
+        ></i>
+      </div>
+    </nav>
+
+    <section id="hero">
+      <div class="hero-main">
+        <div class="hero-main-left">
+          <h2>Hi,</h2>
+          <h1>My Name is Ali sami <br> <span>I am a</span></h1>
+          <h3>Frontend Developer</h3>
+        </div>
+        <div class="hero-main-right">
+          <h1>About Me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            velit quibusdam necessitatibus harum modi non assumenda nihil
+            suscipit exercitationem quisquam? Lorem, ipsum dolor sit amet
+            consectetur adipisicing elit. Quisquam maxime molestias, id
+            voluptatem facere ducimus nulla consequuntur veniam ipsum totam.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skill">
+      <div class="skill-main">
+        <h3>Skills</h3>
+        <div class="skill-continer">
+          <div class="cards">
+            <i class="fa-brands fa-html5"></i>
+            <h2>HTML</h2>
+          </div>
+          <div class="cards">
+            <i class="fa-brands fa-css3"></i>
+            <h2>CSS</h2>
+          </div>
+          <div class="cards">
+            <i class="fa-brands fa-js"></i>
+            <h2>JAVASCRIPT</h2>
+          </div>
+          <div class="cards">
+            <i class="fa-brands fa-react"></i>
+            <h2>REACT</h2>
+          </div>
+          <div class="cards">
+            <i class="fa-brands fa-node-js"></i>
+            <h2>Node JS</h2>
+          </div>
+          <div class="cards">
+            <i class="fa-brands fa-github"></i>
+            <h2>GIT HUB</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-main">
+        <h2>Contact</h2>
+        <form action="" class="form">
+          <label for="">Name:</label><br> <input type="text"><br>
+          <label for="">Email:</label><br><input type="email" name="" id=""><br>
+          <label for="">Messsage</label>
+          <br>
+          <textarea name="" id=""></textarea>
+
+        </form>
+        <div class="container">
+          <button class="button">Submit</button>
+        </div>
+
+        
+
+
+
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
